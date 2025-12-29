@@ -3,14 +3,14 @@
 Este é um projeto didático de uma VPN de camada 3 escrita em Python, utilizando interfaces **TUN/TAP** e criptografia simétrica.
 
 ## 🚀 Funcionalidades
-- Criação dinâmica de túnel virtual (TUN).
-- Criptografia de pacotes usando a biblioteca `cryptography`.
-- Comunicação via socket UDP.
+* Criação dinâmica de túnel virtual (TUN).
+* Criptografia de pacotes usando a biblioteca `cryptography`.
+* Comunicação via socket UDP para alta performance.
 
 ## 📋 Pré-requisitos
-- Linux (Ubuntu, Debian, etc).
-- Python 3.x.
-- Acesso root (sudo).
+* Linux (Ubuntu, Debian, etc).
+* Python 3.x.
+* Acesso root (sudo).
 
 ## 🔧 Instalação
 
@@ -29,7 +29,7 @@ Gere uma chave de criptografia para que o cliente e o servidor possam conversar:
 Bash
 
 python3 -c "from cryptography.fernet import Fernet; print(Fernet.generate_key())"
-Importante: Copie a chave gerada no terminal e cole na variável KEY dentro do client.py e do server.py.
+Importante: Copie a chave gerada no seu terminal e cole-a na variável KEY dentro do arquivo client.py e do arquivo server.py.
 
 💻 Como Usar
 1. No Servidor (VPS)
@@ -41,7 +41,7 @@ sudo sysctl -w net.ipv4.ip_forward=1
 sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 sudo python3 server.py
 2. No Cliente
-Inicie a conexão apontando para o IP do seu servidor:
+Inicie a conexão apontando para o IP público do seu servidor:
 
 Bash
 
@@ -51,9 +51,7 @@ Aviso: Este projeto tem fins educacionais. Não substitua VPNs comerciais de alt
 
 ---
 
-### O que foi corrigido:
-1.  **Blocos de Código:** Agora todos os comandos estão dentro de ` ```bash ` e ` ``` `, o que cria a caixa de código no GitHub.
-2.  **Identação:** Removi o texto "Bash" que estava sobrando e organizei os tópicos.
-3.  **Link do Git:** Já deixei o link do seu repositório (`lmgGomes/VPN.py`) no comando de clone.
 
-**Deseja que eu crie um arquivo `.gitignore` para o seu projeto?** Isso serve para evitar que arquivos desnecessários (como pastas temporárias do Python) subam para o seu GitHub.
+**Dica Extra:** Se você quiser que o seu projeto apareça para mais pessoas no GitHub, você pode adicionar "Tags" (topics) no repositório como `python`, `vpn`, `networking` e `security`.
+
+Quer que eu te ajude a criar o arquivo `requirements.txt` para que as pessoas possam instalar tudo com um único comando?
