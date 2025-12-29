@@ -1,0 +1,5 @@
+my-python-vpn/
+├── client.py           # Código do cliente
+├── server.py           # Código do servidor
+├── requirements.txt    # Dependências do projeto
+└── README.md           # Documentação
