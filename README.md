@@ -17,12 +17,13 @@ Este é um projeto didático de uma VPN de camada 3 escrita em Python, utilizand
 1. Clonar o repositório:
 ```bash
 git clone https://github.com/lmgGomes/VPN.py.git
-cd VPN.py
+cd VPN.py```
+
 Instale as dependências:
 
-Bash
+```Bash
+pip install cryptography```
 
-pip install cryptography
 🛠️ Configuração Inicial
 Gere uma chave de criptografia para que o cliente e o servidor possam conversar:
 
